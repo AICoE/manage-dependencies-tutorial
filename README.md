@@ -1,6 +1,6 @@
 # Thoth Tutorial - manage your dependencies in Jupyter notebooks.
 
-This tutorial is used to show how to manage dependencies for Jupyter Notebooks to allow reproducibility and shareability. In this way you learn how to move from local machine to cloud, running on [Operate First][1], and how you can enable contributions on your project from other team members.
+This tutorial is used to show how to manage dependencies for Jupyter Notebooks to allow reproducibility and shareability. You will learn how to move from local to cloud development using [Operate First][1] environment and how you can enable contributions on your project.
 
 Once the tutorial is completed, you will be able to run your work on [Project Meteor][2].
 

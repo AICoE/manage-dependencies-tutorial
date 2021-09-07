@@ -28,7 +28,7 @@ Once your image is ready and you are in the Jupyterlab UI, you can use the Git e
 1. Click the Git extension button from Jupyterlab UI:
 
     <div style="text-align:center">
-    <img alt="Look for Git extension button" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/ElyraGitExtension.png">
+    <img alt="Look for Git extension button" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabGitExtension.png">
     </div>
 
 2. Take HTTPS link of the GitHub repo you want to clone, for this tutorial use your forked one from this repo:
@@ -40,7 +40,7 @@ Once your image is ready and you are in the Jupyterlab UI, you can use the Git e
 3. Insert the link taken from your forked repo in the JupyterLab Git Extension: e.g. `https://github.com/AICoE/manage-dependencies-tutorial.git`
 
     <div style="text-align:center">
-    <img alt="Clone your repo" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/CloneYourRepo.png">
+    <img alt="Clone your repo" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabCloneYourRepo.png">
     </div>
 
 

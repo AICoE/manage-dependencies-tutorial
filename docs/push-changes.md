@@ -12,38 +12,38 @@ In order to do that from within JupyterHub using the [Jupyterlab Git extension](
 1. Go to Git Box panel on the left to check what files have been changed.
 
     <div style="text-align:center">
-    <img alt="Go to Git Box Panel" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/GotoGitBoxPanel.png">
+    <img alt="Go to Git Box Panel" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabGitBoxPanel.png">
     </div>
 
 2. Stage the files you want to push to your GitHub repo.
 
     <div style="text-align:center">
-    <img alt="Stage the files" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/StageFiles.png">
+    <img alt="Stage the files" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabGitStageFiles.png">
     </div>
 
 3. Add Summary of your changes (a.k.a commit message) and select Commit.
 
     <div style="text-align:center">
-    <img alt="Commit Changes" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/CommitChanges.png">
+    <img alt="Commit Changes" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabGitCommitChanges.png">
     </div>
 
     NOTE: _If you are doing this for the first time, git requires user email and user name to be set.(The extension will open a Dialog Form to insert them)_
 
     <div style="text-align:center">
-    <img alt="Insert User Name and Email" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/InsertUserNameEmail.png">
+    <img alt="Insert User Name and Email" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabGitInsertUserNameEmail.png">
     </div>
 
 
 4. Select Push Changes.
 
     <div style="text-align:center">
-    <img alt="Use Button to Push Changes" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/UseButtonToPushChanges.png">
+    <img alt="Use Button to Push Changes" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabGitUseButtonToPushChanges.png">
     </div>
 
 5. Insert your Github account name and your GitHub token to push to the GitHub repo you cloned.
 
     <div style="text-align:center">
-    <img alt="Push Changes with GitHub token" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/PushGitHubToken.png">
+    <img alt="Push Changes with GitHub token" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabGitPush.png">
     </div>
 
 ## Push your changes using the terminal in JupyterLab
@@ -53,13 +53,13 @@ If you want to clone a repo and push changes through the Terminal, you can use t
 1. Open terminal from the icon in the Launcher.
 
     <div style="text-align:center">
-    <img alt="Open Terminal" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/OpenTerminal.png">
+    <img alt="Open Terminal" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabOpenTerminal.png">
     </div>
 
 2. Start using the git commands:
 
     <div style="text-align:center">
-    <img alt="Use Git Commands" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/UseTerminal.png">
+    <img alt="Use Git Commands" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabUseTerminal.png">
     </div>
 
 - `git clone <repo>` to clone a new repo.
@@ -69,7 +69,7 @@ If you want to clone a repo and push changes through the Terminal, you can use t
 - `git commit -m "<commit message>"` to commit the changes in stage. _NOTE: If you are doing this for the first time, git requires user email and user name to be set._
 
     <div style="text-align:center">
-    <img alt="First commit" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/FirsCommit.png">
+    <img alt="First commit" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabTerminalFirstCommit.png">
     </div>
 
 - `git push origin <branch>` to push your changes.

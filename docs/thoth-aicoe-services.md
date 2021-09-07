@@ -14,7 +14,7 @@ Start by installing the Kebechet GitHub application, called Khebut by [following
 Once the application is installed, you will need to add Thoth's bot (Sesheta) as collaborator. Navigate to the repo where you intalled Khebut. Under the repository's **Settings**, go to **Manage Access** and click on "Invite a collaborator" and add Thoth Bot Sesheta. Sesheta is a friendly Thoth bot who is used to help automate tasks. [Follow this link](https://github.com/AICoE/aicoe-ci/issues/new?assignees=goern%2Charshad16&labels=area%2Fcyborgs%2Cbot%2Csig%2Fcyborgs&template=request_sesheta.yaml&title=Help+with+Sesheta+invite) and fill out the form to have Sesheta accept your invitation. Please note: there is sometimes a delay in Sesheta's invite acceptance.
 
 <div style="text-align:center">
-<img alt="Invite Sesheta" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/InviteSesheta.png">
+<img alt="Invite Sesheta" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/SeshetaInvite.png">
 </div>
 
 ### 2. Enable issues on your fork
@@ -22,7 +22,7 @@ Once the application is installed, you will need to add Thoth's bot (Sesheta) as
 Sesheta, the bot that will assist you in this tutorial, communicates through issues. On your fork, the issues tab may not be enabled automatically. In order to enable issues, go to the **Settings** tab and check the box next to "Issues".
 
 <div style="text-align:center">
-<img alt="Enable Fork Issues" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/EnableForkIssues.png">
+<img alt="Enable Fork Issues" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/SeshetaEnableForkIssues.png">
 </div>
 
 ### 3. Add/Edit `.thoth.yaml`
@@ -118,11 +118,11 @@ Once you modify the `.aicoe.yaml` push the changes to your repo. Check [push cha
 Some of the pipelines used in the Thoth project are maintained by bots. Therefore you can simply open an issue asking for a release (e.g patch, minor, major) and the bots will handle your request. Once the request is completed, the bot will also automatically close the issue, as you can see from the images below:
 
 <div style="text-align:center">
-<img alt="Open Issue Release" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/OpenIssueRelease.png">
+<img alt="Open Issue Release" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/KhebutOpenIssueRelease.png">
 </div>
 
 <div style="text-align:center">
-<img alt="Pull Request Release" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/PullRequestRelease.png">
+<img alt="Pull Request Release" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/KhebutPullRequestRelease.png">
 </div>
 
 Fun fact, the `CHANGELOG` in the release is also created using an AI model that clusters pull requests. You can find more information about this model in our [glyph][3] project.
@@ -132,7 +132,7 @@ Once the issue is closed by the bot, a new tag is created in the GitHub repo. Th
 Once the image has been created by the Tekton pipelines, you can find it in your registry (e.g. Quay):
 
 <div style="text-align:center">
-<img alt="Image on Registry" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/ImageRegistry.png">
+<img alt="Image on Registry" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/QuayImageRegistry.png">
 </div>
 
 ## Dependencies updates in the repo
