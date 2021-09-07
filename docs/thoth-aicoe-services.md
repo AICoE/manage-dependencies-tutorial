@@ -5,7 +5,7 @@ This document describes how the [AICoE CI][1] and [Thoth](https://github.com/tho
 
 ## Set up Thoth bots
 
-Adding Thoth's bots takes just a few steps! 
+Adding Thoth's bots takes just a few steps!
 
 ### 1. Install Khebut
 
@@ -27,7 +27,7 @@ Sesheta, the bot that will assist you in this tutorial, communicates through iss
 
 ### 3. Add/Edit `.thoth.yaml`
 
-Thoth services require a configuration file ([.thoth.yaml](../.thoth.yaml)) at the root level of the project. 
+Thoth services require a configuration file ([.thoth.yaml](../.thoth.yaml)) at the root level of the project.
 
 In this tutorial, the file is already present, so you will not need to add it. To configure this on your own fork, you will need to update the Kebechet [managers](https://github.com/thoth-station/kebechet/tree/master/kebechet/managers) section to include your GitHub username and push changes to your fork. Check [push changes section]((./push-changes.md)) for more details.
 
