@@ -77,4 +77,4 @@ If you want to clone a repo and push changes through the Terminal, you can use t
 
 ## Next Step
 
-[Set bots and pipelines to create releases, build images and enable dependency management](./thoth-aicoe-services.md)
+[Set bots and pipelines to enable automatic dependency management and automatic build after release](./thoth-aicoe-services.md)

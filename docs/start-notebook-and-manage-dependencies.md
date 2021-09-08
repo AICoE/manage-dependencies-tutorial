@@ -60,7 +60,7 @@ There are 3 ways to interact with [jupyterlab-requirements][1] JupyterLab extens
 
 As you can see, initially there are errors reported because no Pipfile or Pipfile.lock exist for this notebook.
 
-3. Run cell with `%horus requirements --add <package-name>` to add a new package. 
+3. Run cell with `%horus requirements --add <package-name>` to add a new package.
 
 For example, let's add a common package used in ML projects: `%horus requirements --add boto3`
 

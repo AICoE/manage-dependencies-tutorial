@@ -1,6 +1,16 @@
 # Create a first release and image of your project
 
-This document describes how the [AICoE CI][1] and [Thoth](https://github.com/thoth-station) bots can be used to create the images for your project. If you want to build images and make release from your own fork, use the following instructions for image builds.
+This section describes how the [AICoE CI][1] and [Thoth](https://github.com/thoth-station) bots can be used to maintain dependencies and create the images for your project.
+
+In particular:
+
+- [AICoE CI][1] is used to support your AI project lifecycle for release and deployments.
+
+- [Kebechet Bot][4] is used to keep your dependencies fresh and up to date receiving recommendations and justifications using AI (Thoth service).
+
+These bots and pipelines exist to automate many of the manual GitOps tasks (e.g. in order to deploy your application, you may need to create a container image). [GitHub templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates) integrated with bots can provide you with automated pipelines triggered depending on what you need (e.g. release (patch, minor, major), deliver a container image, or update your dependencies).
+
+The next steps will teach you how to install those tools and trigger them.
 
 
 ## Set up Thoth bots
@@ -69,7 +79,7 @@ NOTE: _If you obtained the dependencies locked using Thoth dependency resolution
 
 ## Set up AICoE CI
 
-The [AICoE-CI tooling](https://github.com/AICoE/aicoe-ci) can be set up in just a few steps.
+The [AICoE CI][1](https://github.com/AICoE/aicoe-ci) can be set up in just a few steps.
 
 ### 1. Install AICOE CI
 
@@ -148,20 +158,26 @@ An example of the Khebut bot in action can be seen below.
 </div>
 
 
-## End of tutorial
+## End of tutorial and Project Meteor
 
-Now you are ready to continue working on your project safely, creating releases and having dependencies maintained by bots. Your repo now also satisfies the requirements to use project [Meteor](https://github.com/AICoE/meteor) directly from [Operate First](https://www.operate-first.cloud/). Check this [link](http://meteor-shower-aicoe-meteor.apps.zero.massopen.cloud/).
+Now you are ready to continue working on your project safely, creating releases and having dependencies maintained by bots. Your repo now also satisfies the requirements to use [Project Meteor][6] directly from [Operate First][7]. [Project Meteor][6] is a combined effort across the AICoE to provide a single tool for data scientists and other users where they can interact with, explore and leverage all of our services, tools and technologies for developing intelligent applications.
+Check this [link](http://meteor-shower-aicoe-meteor.apps.zero.massopen.cloud/).
+
 
 ## References
 
-* [AICoE CI Pipeline][1]
+* [AICoE CI][1]
 * [Setting AICoE CI on a GitHub repo/org][2]
 * [Project Glyph][3]
-* [Kebechet][4]
+* [Kebechet Bot][4]
 * [Bots and CI Services Setup Instructions][5]
+* [Project Meteor][6]
+* [Operate First][7]
 
 [1]: https://github.com/AICoE/aicoe-ci
 [2]: https://github.com/AICoE/aicoe-ci#setting-aicoe-ci-on-github-organizationrepository
 [3]: https://github.com/thoth-station/glyph
 [4]: https://github.com/thoth-station/kebechet
 [5]: https://github.com/AICoE/aicoe-ci/blob/master/docs/thoth-bots-setup.md#instructions-to-setup-bots-and-ci-services
+[6]: https://github.com/AICoE/meteor
+[7]: https://www.operate-first.cloud/
