@@ -25,6 +25,9 @@ In particular, in the notebook metadata you will find:
 
 All this information can allow reproducibility and shareability of the notebook.
 
+
+## What you will learn with this tutorial?
+
 At the end of this tutorial you will be able to manage dependencies for your projects in Jupyter Notebooks, enabling others to reproduce what you did and allowing them to contribute to it. The last section will teach also how to enable bots to keep dependencies automatically up to date for you and how you can use automatic pipelines to create release and images of your projects that you can easily share with others.
 
 
