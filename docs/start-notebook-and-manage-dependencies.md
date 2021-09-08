@@ -103,7 +103,7 @@ If you want to show a specific part of your dependencies information stored in t
 
 This is a notebook I was working on and I want to make it reproducible because I did not state any dependencies.
 
-NOTE: _If you have a notebook with `!pip install <package-name>` cells, they will be removed and converted to commands that allow reproducibility once you start the notebook._
+NOTE: _If you have a notebook with `!pip install <package-name>` cells, you can convert them to commands that allow reproducibility running `%horus clean`._
 
 2. Run `%horus discover`, so that Thoth can discover the packages that you are using in your dependencies
 
