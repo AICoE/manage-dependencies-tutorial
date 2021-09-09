@@ -2,9 +2,9 @@
 
 Reproducibility and shareability of notebooks is very important if you want to allow others to repeat your experiments and avoid issues due to dependencies management.
 When using `pip install <package_name>` is not possible to verify which software stack was used to run the notebook and therefore another user cannot repeat the same experiment.
-Check the video [here](https://www.youtube.com/watch?v=ifyQ2oSxjnU) if you want to know more.
+Dependency management is one of the most important requirements for reproducibility. Having dependencies clearly stated allows portability of notebooks, so they can be shared safely with others, reused in other projects or simply reproduced. If you want to know more about this issue in the data science domain, have a look at this [article](https://developers.redhat.com/blog/2021/03/19/managing-python-dependencies-with-the-thoth-jupyterlab-extension/) or this [video](https://www.youtube.com/watch?v=ifyQ2oSxjnU).
 
-In order to avoid this issues, dependencies for Jupyter notebooks in this tutorial are managed using the JupyterLab extension [jupyterlab-requirements][1].
+In order to help developers (including data scientists), dependencies for Jupyter notebooks in this tutorial are managed using the JupyterLab extension [jupyterlab-requirements][1].
 
 You can use this extension for each of your notebook to guarantee they have the correct dependencies. This extension is able to add/remove dependencies, lock them and store them in the notebook metadata. In this way all the dependencies information required to repeat the environment are shipped with the notebook.
 
@@ -95,15 +95,19 @@ If you want to show a specific part of your dependencies information stored in t
 
 ### Bring your notebook and make it reproducible
 
-1. Let's open the notebook `my-notebook` provided in `notebooks` folder.
+We will consider two use cases:
+
+- This is a notebook I was working on and I want to make it reproducible because I did not state any dependencies.
+
+- This is a notebook I was working on that uses `pip` in my cells and I want to make it reproducible.
+
+#### Notebook with no commands for dependency management
+
+1. Let's open the notebook called `discover-my-notebook`, provided in `notebooks` folder.
 
 <div style="text-align:center">
 <img alt="Start my notebook" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabStartExistingNotebook.png">
 </div>
-
-This is a notebook I was working on and I want to make it reproducible because I did not state any dependencies.
-
-NOTE: _If you have a notebook with `!pip install <package-name>` cells, you can convert them to commands that allow reproducibility running `%horus clean`._
 
 2. Run `%horus discover`, so that Thoth can discover the packages that you are using in your dependencies
 
@@ -122,6 +126,53 @@ NOTE: _If you want to edit some dependencies, you can simply add them again with
 </div>
 
 4. Run `%horus lock` to lock dependencies using Thoth resolution engine.
+
+<div style="text-align:center">
+<img alt="Horus lock command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusLock.png">
+</div>
+
+If you are interested in a specific recommendation from Thoth, add `--recommendation-type <recommendation-type>`, default is `latest` ("latest", "stable", "performance", "security").
+
+By default, Thoth will discover the runtime environment you are running on. If you want to receive a recommendation for a specific runtime environment, you can use the following flags:
+
+- `--os-name`
+- `--os-version`
+- `--python-version`
+
+5. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
+
+If you want to show a specific part of your dependencies information stored in the notebook metadata, you can use the following flags:
+
+- `--pipfile`
+- `--pipfile-lock`
+- `--thoth-config` (only if Thoth resolution engine was used)
+
+
+#### Notebook with pip install cells
+
+1. Let's open the notebook called `make-notebook-reproducible`, provided in `notebooks` folder.
+
+<div style="text-align:center">
+<img alt="Start my notebook with pip cells" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabStartExistingNotebook2.png">
+</div>
+
+2. Run `%horus clean`, so that the extenstion can convert `!pip install` cells to commands that allow reproducibility.
+
+<div style="text-align:center">
+<img alt="Horus clean command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusClean.png">
+</div>
+
+3. Run the converted cells to add the requirements to your notebook.
+
+NOTE: _If you want to edit some dependencies, you can simply add them again with your specific requirements (`%horus requirement --add`)._
+
+4. Run cell with `%horus check` to check the status of your notebook.
+
+<div style="text-align:center">
+<img alt="Horus check after discover" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusCheckAfterDiscover.png">
+</div>
+
+5. Run `%horus lock` to lock dependencies using Thoth resolution engine.
 
 <div style="text-align:center">
 <img alt="Horus lock command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusLock.png">
