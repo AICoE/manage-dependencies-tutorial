@@ -1,13 +1,14 @@
 # Push your changes on your GitHub repo
 
-If you don't have a GitHub token, you can create one following GitHub docs: [create GitHub token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+This section will show how you can push your changes to your GitHub repo directly from the [Jupyterlab Git extension][1].
+The only thing you need is a GitHub token. You can create one following GitHub docs: [create GitHub token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
 ## Push your changes using JupyterLab Git extension
 
 If you are running this tutorial on Operate First your work-in-progress notebooks can be saved in your JupyterHub PVC by hitting the save button on the top panel.
 Nevertheless, it is a good practice to push your changes to the GitHub repo when you finish working on your project, so that all your work can be saved.
 
-In order to do that from within JupyterHub using the [Jupyterlab Git extension](https://github.com/jupyterlab/jupyterlab-git):
+In order to do that from within JupyterLab using the [Jupyterlab Git extension][1]:
 
 1. Go to Git Box panel on the left to check what files have been changed.
 
@@ -78,3 +79,9 @@ If you want to clone a repo and push changes through the Terminal, you can use t
 ## Next Step
 
 [Set bots and pipelines to enable automatic dependency management and automatic build after release](./thoth-aicoe-services.md)
+
+## References
+
+* [Jupyterlab Git extension][1]
+
+[1]: https://github.com/jupyterlab/jupyterlab-git

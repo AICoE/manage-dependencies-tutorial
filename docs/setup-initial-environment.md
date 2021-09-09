@@ -1,5 +1,7 @@
 # Setup initial environment
 
+The environment that will be used for this tutorial is an open environment with open source technologies running on [Red Hat Openshift][1] on an open infrastructure with an open community that allow developers and operators to collaborate and learn from each other, called [Operate First][2].
+[Operate First][2] hosts [Open Data Hub][3] with all the tools provided for Data Science projects (e.g. JupyterHub, Elyra, Kubeflow Pipelines, Seldon, Prometheus, Grafana, Superset) running on [Red Hat Openshift][1].
 
 ## 1. Fork this repo from GitHub
 
@@ -8,7 +10,7 @@ To begin, you'll need to fork this repository to create your own copy. If you're
 
 ## 2. Access the Elyra image in JupyterHub
 
-In order to access the [JupyterHub][3] deployed on the [Operate First][4] cluster:
+In order to access the [JupyterHub][4] from [Open Data Hub][3] deployed on the [Operate First][2] cluster:
 
 1. Click this [link](https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/) to visit the Operate First JupyterHub.
 
@@ -51,12 +53,12 @@ Once your image is ready and you are in the Jupyterlab UI, you can use the Git e
 
 ## References
 
-* [Project template][1]
-* [Project Meteor][2]
-* [JupyterHub][3]
-* [Operate First][4]
+* [Red Hat Openshift][1]
+* [Operate First][2]
+* [Open Data Hub][3]
+* [JupyterHub][4]
 
-[1]: https://github.com/aicoe-aiops/project-template
-[2]: https://github.com/AICoE/meteor
-[3]: https://jupyter.org/hub
-[4]: https://www.operate-first.cloud/
+[1]: https://www.openshift.com/
+[2]: https://www.operate-first.cloud/
+[3]: https://opendatahub.io/
+[4]: https://jupyter.org/hub

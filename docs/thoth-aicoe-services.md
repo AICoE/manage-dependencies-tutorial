@@ -200,10 +200,9 @@ An example of the Khebut bot in action can be seen below.
 </div>
 
 
-## End of tutorial and Project Meteor
+## Next Step
 
-Now you are ready to continue working on your project safely, creating releases and having dependencies maintained by bots. Your repo now also satisfies the requirements to use [Project Meteor][6] directly from [Operate First][7]. [Project Meteor][6] is a combined effort across the AICoE to provide a single tool for data scientists and other users where they can interact with, explore and leverage all of our services, tools and technologies for developing intelligent applications.
-Check this [link](http://meteor-shower-aicoe-meteor.apps.zero.massopen.cloud/).
+[Share your work](./integrate-with-odh.md)
 
 
 ## References

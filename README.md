@@ -45,6 +45,8 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 
 4. [Setup bots and pipelines to create releases, build images and enable automatic dependency management](./docs/thoth-aicoe-services.md)
 
+5. [Share your work](./docs/source/share-your-work.md)
+
 
 ## References
 
