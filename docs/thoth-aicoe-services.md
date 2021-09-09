@@ -74,8 +74,6 @@ managers:
 
 To learn more about Thoth bots and services, please check out the guide [here][2].
 
-NOTE: _If you obtained the dependencies locked using Thoth dependency resolution engine, `.thoth.yaml` used is stored in the notebook metadata. You can extract it and place it at the root of the repo, simply running: `%horus extract --thoth-config --store-files-path <PATH_TO_STORE>`._
-
 
 ## Set up AICoE CI
 
@@ -83,7 +81,7 @@ The [AICoE CI][1](https://github.com/AICoE/aicoe-ci) can be set up in just a few
 
 ### 1. Install AICOE CI
 
-Start by installing the AICoE CI GitHub application by [following this link](https://github.com/apps/aicoe-ci). When installing this application, select your profile for the organization, and specify the repository you are working on.
+Start by installing the AICoE CI GitHub application by [following this link](https://github.com/apps/aicoe-ci). When installing this application, select your profile for the organization, and specify the repository you are working on (e.g. `manage-dependencies-tutorial`).
 
 ### 2. Set up robot account
 
@@ -101,7 +99,51 @@ First, you will need to create a robot in the organization or individual account
 
 Once created, click on the robot account name. Find the "Docker Configuration" tab in the robot account popup, and copy the .json. Currently, you will have to pass it on by contacting us. You can reach us at `aicoe-thoth+devconf@redhat.com`. Once the secret is passed, it is ready to be used in the `.aicoe-ci.yaml` file in the next step.
 
-## 3. Edit `.aicoe-ci.yaml`
+## 3. Login into your container registry and create new repository
+
+Click on `+ Create New Repository` button on the upper left part:
+
+<div style="text-align:center">
+<img alt="Create New Repository" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuayCreateNewRepository.png">
+</div>
+
+
+## 4. Add the name of the repository and make it public
+
+<div style="text-align:center">
+<img alt="Create Public Quay repository" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuaySetPublicRepository.png">
+</div>
+
+
+## 5. Set robot permissions for your repo
+
+1. Once the repository is created, go to `Setting`:
+
+<div style="text-align:center">
+<img alt="Go to Setting for your Repo" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuayRepositorySettings.png">
+</div>
+
+2. Under `User and Robot Permissions` you can add the Robot Account created at point 2:
+
+<div style="text-align:center">
+<img alt="Set Robot Account to your Repo" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuaySetRobotAccountRepository.png">
+</div>
+
+3. Set Robot Permission to `Write`:
+
+<div style="text-align:center">
+<img alt="Set Robot Permission to Write to your Repo" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuaySetRobotPermissionsWriteRepository.png">
+</div>
+
+4. Click `Add Permission`:
+
+<div style="text-align:center">
+<img alt="Add Permission for the Robot Account" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuayAddRobotPermissionsRepository.png">
+</div>
+
+Now everything is set on your container registry and the AICoE-CI will be able to push to your container image in your registry. Last step will be configuring the AICOE-CI to know where to push.
+
+## 5. Edit `.aicoe-ci.yaml`
 
 The last step is to add the [aicoe-ci configuration file](https://github.com/AICoE/aicoe-ci#aicoe-ci-configuration-file). Configuration files allows user assign details about the build requirements and specify base image and registry details for build and push. For the purpose of this tutorial, the [.aicoe-ci.yaml](../.aicoe-ci.yaml) file is already present. However, you may need to edit some of the fields for your personal access, namely `registry-org`, `registry-project`, and `registry-secret`.
 
@@ -115,8 +157,8 @@ build:
   build-stratergy: Source # Allowed values: Source, Dockerfile, Containerfile
   registry: quay.io # Image registry to be used. (default: quay.io)
   registry-org: thoth-station # Organization in Image Registry. (default: thoth-station)
-  registry-project: manage-dependencies-tutorial # project repository in Image Registry (ie, Quay) used to push image.
-  registry-secret: thoth-station-thoth-pusher-secret # comes from robot account
+  registry-project: manage-dependencies-tutorial # project repository in Image Registry (ie, Quay) used to push image (created in point 3.).
+  registry-secret: thoth-station-thoth-pusher-secret # comes from robot account (created in point 2.)
 ```
 
 For more detailed information on the config file and robot accounts, visit the [AICoE CI documentation](https://github.com/AICoE/aicoe-ci#configuring-build-requirements).
@@ -125,7 +167,7 @@ Once you modify the `.aicoe.yaml` push the changes to your repo. Check [push cha
 
 ## Get new release
 
-Some of the pipelines used in the Thoth project are maintained by bots. Therefore you can simply open an issue asking for a release (e.g patch, minor, major) and the bots will handle your request. Once the request is completed, the bot will also automatically close the issue, as you can see from the images below:
+Now that everything is set you can create new images. Some of the pipelines used in the Thoth project are maintained by bots. Therefore you can simply open an issue asking for a release (e.g patch, minor, major) and the bots will handle your request. Once the request is completed, the bot will also automatically close the issue, as you can see from the images below:
 
 <div style="text-align:center">
 <img alt="Open Issue Release" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/KhebutOpenIssueRelease.png">
