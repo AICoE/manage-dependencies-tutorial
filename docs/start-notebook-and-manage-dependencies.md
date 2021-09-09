@@ -109,60 +109,21 @@ We will consider two use cases:
 <img alt="Start my notebook" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabStartExistingNotebook.png">
 </div>
 
-2. Run `%horus discover`, so that Thoth can discover the packages that you are using in your dependencies
+2. Run cell with `%horus check` to check the status of your notebook:
+
+<div style="text-align:center">
+<img alt="Horus check initial command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusCheckInitialDiscover.png">
+</div>
+
+As you can see, initially there are errors reported because no Pipfile or Pipfile.lock exist for this notebook.
+
+3. Run `%horus discover`, so that Thoth can discover the packages that you are using in your dependencies
 
 <div style="text-align:center">
 <img alt="Horus discover command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusDiscover.png">
 </div>
 
 As you can notice the `%horus discover` command is able to read the content of your notebook and identify packages that are actually used in the notebook. `numpy` for example is imported but never used, therefore is not added to the requirements. The library that is able to identify libraries is called `invectio`, have a look [here](https://github.com/thoth-station/invectio) if you want to know more.
-
-NOTE: _If you want to edit some dependencies, you can simply add them again with your specific requirements (`%horus requirement --add`)._
-
-3. Run cell with `%horus check` to check the status of your notebook.
-
-<div style="text-align:center">
-<img alt="Horus check after discover" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusCheckAfterDiscover.png">
-</div>
-
-4. Run `%horus lock` to lock dependencies using Thoth resolution engine.
-
-<div style="text-align:center">
-<img alt="Horus lock command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusLock.png">
-</div>
-
-If you are interested in a specific recommendation from Thoth, add `--recommendation-type <recommendation-type>`, default is `latest` ("latest", "stable", "performance", "security").
-
-By default, Thoth will discover the runtime environment you are running on. If you want to receive a recommendation for a specific runtime environment, you can use the following flags:
-
-- `--os-name`
-- `--os-version`
-- `--python-version`
-
-5. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
-
-If you want to show a specific part of your dependencies information stored in the notebook metadata, you can use the following flags:
-
-- `--pipfile`
-- `--pipfile-lock`
-- `--thoth-config` (only if Thoth resolution engine was used)
-
-
-#### Notebook with pip install cells
-
-1. Let's open the notebook called `make-notebook-reproducible`, provided in `notebooks` folder.
-
-<div style="text-align:center">
-<img alt="Start my notebook with pip cells" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabStartExistingNotebook2.png">
-</div>
-
-2. Run `%horus clean`, so that the extenstion can convert `!pip install` cells to commands that allow reproducibility.
-
-<div style="text-align:center">
-<img alt="Horus clean command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusClean.png">
-</div>
-
-3. Run the converted cells to add the requirements to your notebook.
 
 NOTE: _If you want to edit some dependencies, you can simply add them again with your specific requirements (`%horus requirement --add`)._
 
@@ -186,7 +147,68 @@ By default, Thoth will discover the runtime environment you are running on. If y
 - `--os-version`
 - `--python-version`
 
-5. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
+6. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
+
+If you want to show a specific part of your dependencies information stored in the notebook metadata, you can use the following flags:
+
+- `--pipfile`
+- `--pipfile-lock`
+- `--thoth-config` (only if Thoth resolution engine was used)
+
+
+#### Notebook with pip install cells
+
+1. Let's open the notebook called `make-notebook-reproducible`, provided in `notebooks` folder.
+
+<div style="text-align:center">
+<img alt="Start my notebook with pip cells" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabStartExistingNotebookPip.png">
+</div>
+
+NOTE: _A warning from the jupyterlab-requirements extension will appear to tell users what should be used to handle dependencies._
+
+<div style="text-align:center">
+<img alt="Start my notebook and warning" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabStartExistingNotebookPipWarning.png">
+</div>
+
+2. Run cell with `%horus check` to check the status of your notebook:
+
+<div style="text-align:center">
+<img alt="Horus check initial command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusCheckInitialPip.png">
+</div>
+
+As you can see, initially there are errors reported because no Pipfile or Pipfile.lock exist for this notebook.
+
+3. Run `%horus clean`, so that the extenstion can convert `!pip install` cells to commands that allow reproducibility.
+
+<div style="text-align:center">
+<img alt="Horus clean command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusClean.png">
+</div>
+
+4. Run the converted cells to add the requirements to your notebook.
+
+NOTE: _If you want to edit some dependencies, you can simply add them again with your specific requirements (`%horus requirement --add`)._
+
+5. Run cell with `%horus check` to check the status of your notebook.
+
+<div style="text-align:center">
+<img alt="Horus check after discover" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusCheckAfterDiscover.png">
+</div>
+
+6. Run `%horus lock` to lock dependencies using Thoth resolution engine.
+
+<div style="text-align:center">
+<img alt="Horus lock command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusLock.png">
+</div>
+
+If you are interested in a specific recommendation from Thoth, add `--recommendation-type <recommendation-type>`, default is `latest` ("latest", "stable", "performance", "security").
+
+By default, Thoth will discover the runtime environment you are running on. If you want to receive a recommendation for a specific runtime environment, you can use the following flags:
+
+- `--os-name`
+- `--os-version`
+- `--python-version`
+
+7. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
 
 If you want to show a specific part of your dependencies information stored in the notebook metadata, you can use the following flags:
 

@@ -4,7 +4,7 @@ This section describes how the [AICoE CI][1] and [Thoth](https://github.com/thot
 
 In particular:
 
-- [AICoE CI][1] is used to support your AI project lifecycle for release and deployments.
+- [AICoE CI][1] is Continuous integration system used for running status checks on pull request, build releases, and python module releases.
 
 - [Kebechet Bot][4] is used to keep your dependencies fresh and up to date receiving recommendations and justifications using AI (Thoth service).
 
