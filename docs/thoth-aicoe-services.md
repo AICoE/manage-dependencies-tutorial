@@ -10,7 +10,7 @@ In particular:
 
 These bots and pipelines exist to automate many of the manual GitOps tasks (e.g. in order to deploy your application, you may need to create a container image). [GitHub templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates) integrated with bots can provide you with automated pipelines triggered depending on what you need (e.g. release (patch, minor, major), deliver a container image, or update your dependencies).
 
-The next steps will teach you how to install those tools and trigger them.
+The next steps will teach you how to install and enable those tools and trigger them.
 
 
 ## Set up Thoth bots
@@ -35,9 +35,9 @@ Sesheta, the bot that will assist you in this tutorial, communicates through iss
 <img alt="Enable Fork Issues" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/SeshetaEnableForkIssues.png">
 </div>
 
-### 3. Add/Edit `.thoth.yaml`
+### 3. Edit `.thoth.yaml`
 
-Thoth services require a configuration file ([.thoth.yaml](../.thoth.yaml)) at the root level of the project.
+Thoth services require a configuration file ([.thoth.yaml](../.thoth.yaml)) at the root level of the project. This tutorial is based on [project-template][8], therefore the .thoth.yaml is already present.
 
 In this tutorial, the file is already present, so you will not need to add it. To configure this on your own fork, you will need to update the Kebechet [managers](https://github.com/thoth-station/kebechet/tree/master/kebechet/managers) section to include your GitHub username and push changes to your fork. Check [push changes section]((./push-changes.md)) for more details.
 
@@ -74,6 +74,10 @@ managers:
 
 To learn more about Thoth bots and services, please check out the guide [here][2].
 
+### 4. Push changes to GitHub
+
+Once you modify the `.thoth.yaml` push the changes to your repo. Check [push changes section]((./push-changes.md)) for more details.
+
 
 ## Set up AICoE CI
 
@@ -99,7 +103,7 @@ First, you will need to create a robot in the organization or individual account
 
 Once created, click on the robot account name. Find the "Docker Configuration" tab in the robot account popup, and copy the .json. Currently, you will have to pass it on by contacting us. You can reach us at `aicoe-thoth+devconf@redhat.com`. Once the secret is passed, it is ready to be used in the `.aicoe-ci.yaml` file in the next step.
 
-## 3. Login into your container registry and create new repository
+### 3. Login into your container registry and create new repository
 
 Click on `+ Create New Repository` button on the upper left part:
 
@@ -108,14 +112,14 @@ Click on `+ Create New Repository` button on the upper left part:
 </div>
 
 
-## 4. Add the name of the repository and make it public
+### 4. Add the name of the repository and make it public
 
 <div style="text-align:center">
 <img alt="Create Public Quay repository" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuaySetPublicRepository.png">
 </div>
 
 
-## 5. Set robot permissions for your repo
+### 5. Set robot permissions for your repo
 
 1. Once the repository is created, go to `Setting`:
 
@@ -143,9 +147,9 @@ Click on `+ Create New Repository` button on the upper left part:
 
 Now everything is set on your container registry and the AICoE-CI will be able to push to your container image in your registry. Last step will be configuring the AICOE-CI to know where to push.
 
-## 5. Edit `.aicoe-ci.yaml`
+### 6. Edit `.aicoe-ci.yaml`
 
-The last step is to add the [aicoe-ci configuration file](https://github.com/AICoE/aicoe-ci#aicoe-ci-configuration-file). Configuration files allows user assign details about the build requirements and specify base image and registry details for build and push. For the purpose of this tutorial, the [.aicoe-ci.yaml](../.aicoe-ci.yaml) file is already present. However, you may need to edit some of the fields for your personal access, namely `registry-org`, `registry-project`, and `registry-secret`.
+The last step is to edit the [aicoe-ci configuration file](https://github.com/AICoE/aicoe-ci#aicoe-ci-configuration-file). This tutorial is based on [project-template][8], therefore the .thoth.yaml is already present. The `.aicoe.yaml` onfiguration file allows user to assign details about the build requirements and specify base image and registry details for build and push. For the purpose of this tutorial, the [.aicoe-ci.yaml](../.aicoe-ci.yaml) file is already present. However, you may need to edit some of the fields for your personal access, namely `registry-org`, `registry-project`, and `registry-secret`.
 
 ```yaml
 check:
@@ -162,10 +166,13 @@ build:
 ```
 
 For more detailed information on the config file and robot accounts, visit the [AICoE CI documentation](https://github.com/AICoE/aicoe-ci#configuring-build-requirements).
+
+### 7. Push changes to GitHub
+
 Once you modify the `.aicoe.yaml` push the changes to your repo. Check [push changes section]((./push-changes.md)) for more details.
 
 
-## Get new release
+## Create new release
 
 Now that everything is set you can create new images. Some of the pipelines used in the Thoth project are maintained by bots. Therefore you can simply open an issue asking for a release (e.g patch, minor, major) and the bots will handle your request. Once the request is completed, the bot will also automatically close the issue, as you can see from the images below:
 
@@ -202,7 +209,7 @@ An example of the Khebut bot in action can be seen below.
 
 ## Next Step
 
-[Share your work](./integrate-with-odh.md)
+[Share your work](./share-your-work.md)
 
 
 ## References
@@ -214,6 +221,7 @@ An example of the Khebut bot in action can be seen below.
 * [Bots and CI Services Setup Instructions][5]
 * [Project Meteor][6]
 * [Operate First][7]
+* [project-template][8]
 
 [1]: https://github.com/AICoE/aicoe-ci
 [2]: https://github.com/AICoE/aicoe-ci#setting-aicoe-ci-on-github-organizationrepository
@@ -222,3 +230,4 @@ An example of the Khebut bot in action can be seen below.
 [5]: https://github.com/AICoE/aicoe-ci/blob/master/docs/thoth-bots-setup.md#instructions-to-setup-bots-and-ci-services
 [6]: https://github.com/AICoE/meteor
 [7]: https://www.operate-first.cloud/
+[8]: https://github.com/aicoe-aiops/project-template

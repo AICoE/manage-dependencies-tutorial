@@ -38,6 +38,11 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 [Operate First][1] hosts [Open Data Hub][3] with all the tools provided for Data Science projects (e.g. JupyterHub, Elyra, Kubeflow Pipelines, Seldon, Prometheus, Grafana, Superset) running on [Red Hat Openshift][4].
 
 
+## Why the tutorial repository has this structure?
+
+The project template used can be found here: [project template][7]. It shows correlation between data scientist needs (e.g. data, notebooks, models) and AI DevOps engineers ones (e.g. manifests). Having structure in a project ensures all the pieces required for the ML and DevOps lifecycles are present and easily discoverable.
+
+
 ## Tutorial pre-requisites
 
 0. [Pre-requisites](./docs/pre-requisite.md)
@@ -48,11 +53,11 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 
 2. [Manage dependencies for your notebook](./docs/start-notebook-and-manage-dependencies.md)
 
-3. [Push changes to GitHub](./docs/source/push-changes.md)
+3. [Push changes to GitHub](./docs/push-changes.md)
 
 4. [Setup bots and pipelines to create releases, build images and enable automatic dependency management](./docs/thoth-aicoe-services.md)
 
-5. [Share your work](./docs/source/share-your-work.md)
+5. [Share your work](./docs/share-your-work.md)
 
 
 ## References
@@ -63,6 +68,7 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 * [Red Hat Openshift][4]
 * [Kebechet Bot][5]
 * [AICoE CI][6]
+* [project template][7]
 
 [1]: https://thoth-station.ninja/
 [2]: https://github.com/thoth-station/jupyterlab-requirements
@@ -70,3 +76,4 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 [4]: https://www.openshift.com/
 [5]: https://github.com/marketplace/khebhut
 [6]: https://github.com/AICoE/aicoe-ci
+[7]: https://github.com/aicoe-aiops/project-template

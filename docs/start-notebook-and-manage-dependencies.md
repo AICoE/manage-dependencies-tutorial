@@ -178,10 +178,10 @@ NOTE: _A warning from the jupyterlab-requirements extension will appear to tell 
 
 As you can see, initially there are errors reported because no Pipfile or Pipfile.lock exist for this notebook.
 
-3. Run `%horus clean`, so that the extenstion can convert `!pip install` cells to commands that allow reproducibility.
+3. Run `%horus convert`, so that the extenstion can convert `!pip install` cells to commands that allow reproducibility.
 
 <div style="text-align:center">
-<img alt="Horus clean command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusClean.png">
+<img alt="Horus convert command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusConvert.png">
 </div>
 
 4. Run the converted cells to add the requirements to your notebook.
