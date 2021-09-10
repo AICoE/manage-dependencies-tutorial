@@ -28,7 +28,14 @@ All this information can allow reproducibility and shareability of the notebook.
 
 ## What you will learn with this tutorial?
 
-At the end of this tutorial you will be able to manage dependencies for your projects in Jupyter Notebooks, enabling others to reproduce what you did and allowing them to contribute to it. The last section will teach also how to enable bots to keep dependencies automatically up to date for you and how you can use automatic pipelines to create release and images of your projects that you can easily share with others.
+At the end of this tutorial you will be able to manage dependencies for your projects in Jupyter Notebooks, enabling others to reproduce what you did and allowing them to contribute to it. The last section will teach also how to enable [Kebechet Bot][5] to keep dependencies automatically up to date for you and how you can setup and use automatic pipelines from [AICoE CI][6] to create release and images of your projects that you can easily share with others.
+
+
+## Where you will run this tutorial?
+
+[Operate First][1] is an open infrastructure environment started at Red Hat's Office of the CTO. It has been selected to run this tutorial since it is an open source initiative that fulfills all the requirements stated above. Anyone with a Google account can log in and start developing. To learn more about Operate First, visit the [website](https://www.operate-first.cloud/) or [GitHub community](https://github.com/operate-first).
+
+[Operate First][1] hosts [Open Data Hub][3] with all the tools provided for Data Science projects (e.g. JupyterHub, Elyra, Kubeflow Pipelines, Seldon, Prometheus, Grafana, Superset) running on [Red Hat Openshift][4].
 
 
 ## Tutorial pre-requisites
@@ -52,6 +59,14 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 
 * [Project Thoth][1]
 * [jupyterlab-requirements][2]
+* [Open Data Hub][3]
+* [Red Hat Openshift][4]
+* [Kebechet Bot][5]
+* [AICoE CI][6]
 
 [1]: https://thoth-station.ninja/
 [2]: https://github.com/thoth-station/jupyterlab-requirements
+[3]: https://opendatahub.io/
+[4]: https://www.openshift.com/
+[5]: https://github.com/marketplace/khebhut
+[6]: https://github.com/AICoE/aicoe-ci
