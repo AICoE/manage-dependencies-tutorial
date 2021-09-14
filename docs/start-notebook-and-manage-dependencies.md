@@ -31,18 +31,19 @@ There are 3 ways to interact with [jupyterlab-requirements][1] JupyterLab extens
 <img alt="JupyterLab Requirements Horus magic commands" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabRequirementsExtensionMC.png">
 </div>
 
-- using the `horus` CLI directly from terminal or integrated in pipelines ([check video](https://www.youtube.com/watch?v=fW0YKugL26g&t)).
+- using the `horus` CLI directly from terminal or integrated in pipelines (check the [video](https://www.youtube.com/watch?v=fW0YKugL26g&t) or this [link](https://github.com/thoth-station/jupyterlab-requirements#horus-jupyterlab-requirements-cli) if you want to know more about it).
 
 <div style="text-align:center">
 <img alt="JupyterLab Requirements Horus CLI" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabRequirementsExtensionCLI.png">
 </div>
 
-- using the `Manage Dependencies` button that appears in the notebook when it is opened:
+- using the `Manage Dependencies` button that appears in the notebook when it is opened (check the [link](https://github.com/thoth-station/jupyterlab-requirements#extension-button) if you want to know more about it):
 
 <div style="text-align:center">
 <img alt="JupyterLab Requirements UI" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabRequirementsExtension.jpg">
 </div>
 
+NOTE:_In this tutorial we will focus on %horus magic commands._
 
 ### Start working on a new notebook
 

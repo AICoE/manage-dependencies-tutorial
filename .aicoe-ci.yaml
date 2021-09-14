@@ -5,5 +5,5 @@ build:
   build-stratergy: Source
   registry: quay.io
   registry-org: thoth-station
-  registry-project: elyra-aidevsecops-dataset
+  registry-project: manage-dependencies-tutorial
   registry-secret: thoth-station-thoth-pusher-secret
