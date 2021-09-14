@@ -38,7 +38,7 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 [Operate First][1] hosts [Open Data Hub][3] with all the tools provided for Data Science projects (e.g. JupyterHub, Elyra, Kubeflow Pipelines, Seldon, Prometheus, Grafana, Superset) running on [Red Hat Openshift][4].
 
 
-## Why the tutorial repository has this structure?
+## Why does the tutorial repository have this structure?
 
 The project template used can be found here: [project template][7]. It shows correlation between data scientist needs (e.g. data, notebooks, models) and AI DevOps engineers ones (e.g. manifests). Having structure in a project ensures all the pieces required for the ML and DevOps lifecycles are present and easily discoverable.
 
