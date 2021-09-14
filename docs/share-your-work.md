@@ -7,7 +7,7 @@ At this step of the tutorial you learned how to work on your project safely, sup
 [Project Meteor][1] is a combined effort across the AICoE team at Red Hat, to provide a single tool for data scientists and other users where they can interact with, explore and leverage all of our services, tools and technologies for developing intelligent applications. Project Meteor is deployed on [Operate First][2] and you can use it following this this [link](http://meteor-shower-aicoe-meteor.apps.zero.massopen.cloud/)
 
 
-1. Enter the URL in [Project Meteor][1].
+1. Enter the URL to your Git repository in [Project Meteor][1].
 
 <div style="text-align:center">
 <img alt="Enter URL Project Meteor" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/ProjectMeteorEnterURL.png">
