@@ -1,6 +1,6 @@
 # Share your work
 
-At this step of the tutorial you learned how to work on your project safely, supported by bots and pipelines that make automatic release for you and maintain the dependencies in your project. This last step of the tutorial will show you how you can share snapshots of your project, not only through container images but allowing others to repeat your experiments and interact with it using [Project Meteor][1].
+At this step of the tutorial you learned how to work on your project safely, supported by bots and pipelines that make automatic release for you and maintain the dependencies in your project. This last step of the tutorial will show you how you can share snapshots of your project, not only through container images but allowing others to repeat your experiments and interact with it by using [Project Meteor][1].
 
 # Project Meteor
 
