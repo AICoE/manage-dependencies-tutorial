@@ -11,7 +11,7 @@ Dependency management is one of the most important requirements for reproducibil
 
 Within the different Thoth integations, in this tutorial we are going to focus on the JupyterLab extension for dependency management, which is called [jupyterlab-requirements][2].
 
-You can use this extension for each of your notebook to guarantee they have the correct dependencies. This extension is able to add/remove dependencies, lock them and store them in the notebook metadata. In this way all the dependencies information required to repeat the environment are shipped with the notebook.
+You can use this extension for each of your notebooks to guarantee they have the correct dependencies. This extension is able to add/remove dependencies, lock them and store them in the notebook metadata. In this way, all the dependencies information required to repeat the environment are shipped with the notebook.
 
 In particular, in the notebook metadata you will find:
 
