@@ -15,9 +15,9 @@ At this step of the tutorial you learned how to work on your project safely, sup
 
 [Project Meteor][1] on the background will create two images for you:
 
-- Jupyter Book where you can read about your experiment.
+- JupyterBook where you can view easily shareable, and rendered high-quality static content from experiment. 
 
-- JupyterLab environment where you can run your experiment.
+- A live JupyterLab environment where you can interact with your project and run your experiments.
 
 Now you are all set and ready to show your project to others.
 
