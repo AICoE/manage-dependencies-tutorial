@@ -40,7 +40,7 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 
 ## Why does the tutorial repository have this structure?
 
-The project template used can be found here: [project template][7]. It shows correlation between data scientist needs (e.g. data, notebooks, models) and AI DevOps engineers ones (e.g. manifests). Having structure in a project ensures all the pieces required for the ML and DevOps lifecycles are present and easily discoverable.
+The project template used can be found here: [project template][7]. It shows correlation between a data scientist needs (e.g. data, notebooks, models) and that of an AI DevOps engineer (e.g. manifests). Having structure in a project ensures all the pieces required for the ML and DevOps lifecycles are present and easily discoverable.
 
 
 ## Tutorial pre-requisites
