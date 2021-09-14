@@ -8,7 +8,7 @@ In order to help developers (including data scientists), dependencies for Jupyte
 
 You can use this extension for each of your notebook to guarantee they have the correct dependencies. This extension is able to add/remove dependencies, lock them and store them in the notebook metadata. In this way all the dependencies information required to repeat the environment are shipped with the notebook.
 
-In particular, in the notebook metadata you will find:
+In particular, the following notebook metadata is created for you, when you use Thoth's dependency management tool:
 
 - `requirements (Pipfile)`;
 
