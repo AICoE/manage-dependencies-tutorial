@@ -24,7 +24,7 @@ Start by installing the Kebechet GitHub application, called Khebut by [following
 Once the application is installed, you will need to add Thoth's bot (Sesheta) as collaborator. Navigate to the repo where you intalled Khebut. Under the repository's **Settings**, go to **Manage Access** and click on "Invite a collaborator" and add Thoth Bot Sesheta. Sesheta is a friendly Thoth bot who is used to help automate tasks. [Follow this link](https://github.com/AICoE/aicoe-ci/issues/new?assignees=goern%2Charshad16&labels=area%2Fcyborgs%2Cbot%2Csig%2Fcyborgs&template=request_sesheta.yaml&title=Help+with+Sesheta+invite) and fill out the form to have Sesheta accept your invitation. Please note: there is sometimes a delay in Sesheta's invite acceptance.
 
 <div style="text-align:center">
-<img alt="Invite Sesheta" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/SeshetaInvite.png">
+<img alt="Invite Sesheta" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/SeshetaInvite.png">
 </div>
 
 ### 2. Enable issues on your fork
@@ -32,7 +32,7 @@ Once the application is installed, you will need to add Thoth's bot (Sesheta) as
 Sesheta, the bot that will assist you in this tutorial, communicates through issues. On your fork, the issues tab may not be enabled automatically. In order to enable issues, go to the **Settings** tab and check the box next to "Issues".
 
 <div style="text-align:center">
-<img alt="Enable Fork Issues" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/SeshetaEnableForkIssues.png">
+<img alt="Enable Fork Issues" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/SeshetaEnableForkIssues.png">
 </div>
 
 ### 3. Edit `.thoth.yaml`
@@ -108,14 +108,14 @@ Once created, click on the robot account name. Find the "Docker Configuration" t
 Click on `+ Create New Repository` button on the upper left part:
 
 <div style="text-align:center">
-<img alt="Create New Repository" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuayCreateNewRepository.png">
+<img alt="Create New Repository" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/QuayCreateNewRepository.png">
 </div>
 
 
 ### 4. Add the name of the repository and make it public
 
 <div style="text-align:center">
-<img alt="Create Public Quay repository" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuaySetPublicRepository.png">
+<img alt="Create Public Quay repository" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/QuaySetPublicRepository.png">
 </div>
 
 
@@ -124,25 +124,25 @@ Click on `+ Create New Repository` button on the upper left part:
 1. Once the repository is created, go to `Setting`:
 
 <div style="text-align:center">
-<img alt="Go to Setting for your Repo" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuayRepositorySettings.png">
+<img alt="Go to Setting for your Repo" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/QuayRepositorySettings.png">
 </div>
 
 2. Under `User and Robot Permissions` you can add the Robot Account created at point 2:
 
 <div style="text-align:center">
-<img alt="Set Robot Account to your Repo" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuaySetRobotAccountRepository.png">
+<img alt="Set Robot Account to your Repo" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/QuaySetRobotAccountRepository.png">
 </div>
 
 3. Set Robot Permission to `Write`:
 
 <div style="text-align:center">
-<img alt="Set Robot Permission to Write to your Repo" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuaySetRobotPermissionsWriteRepository.png">
+<img alt="Set Robot Permission to Write to your Repo" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/QuaySetRobotPermissionsWriteRepository.png">
 </div>
 
 4. Click `Add Permission`:
 
 <div style="text-align:center">
-<img alt="Add Permission for the Robot Account" src="https://raw.githubusercontent.com/aicoe/elyra-aidevsecops-tutorial/master/docs/images/QuayAddRobotPermissionsRepository.png">
+<img alt="Add Permission for the Robot Account" src="https://raw.githubusercontent.com/aicoe/manage-dependencies-tutorial/master/docs/images/QuayAddRobotPermissionsRepository.png">
 </div>
 
 Now everything is set on your container registry and the AICoE-CI will be able to push to your container image in your registry. Last step will be configuring the AICOE-CI to know where to push.

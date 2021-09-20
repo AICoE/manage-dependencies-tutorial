@@ -85,6 +85,8 @@ By default, Thoth will discover the runtime environment you are running on. If y
 - `--os-version`
 - `--python-version`
 
+You can also use `%horus lock --pipenv` if you want to lock dependencies with Pipenv resolution engine.
+
 6. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
 
 If you want to show a specific part of your dependencies information stored in the notebook metadata, you can use the following flags:
@@ -136,10 +138,6 @@ NOTE: _If you want to edit some dependencies, you can simply add them again with
 
 5. Run `%horus lock` to lock dependencies using Thoth resolution engine.
 
-<div style="text-align:center">
-<img alt="Horus lock command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusLock.png">
-</div>
-
 If you are interested in a specific recommendation from Thoth, add `--recommendation-type <recommendation-type>`, default is `latest` ("latest", "stable", "performance", "security").
 
 By default, Thoth will discover the runtime environment you are running on. If you want to receive a recommendation for a specific runtime environment, you can use the following flags:
@@ -147,6 +145,8 @@ By default, Thoth will discover the runtime environment you are running on. If y
 - `--os-name`
 - `--os-version`
 - `--python-version`
+
+You can also use `%horus lock --pipenv` if you want to lock dependencies with Pipenv resolution engine.
 
 6. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
 
@@ -197,10 +197,6 @@ NOTE: _If you want to edit some dependencies, you can simply add them again with
 
 6. Run `%horus lock` to lock dependencies using Thoth resolution engine.
 
-<div style="text-align:center">
-<img alt="Horus lock command" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusLock.png">
-</div>
-
 If you are interested in a specific recommendation from Thoth, add `--recommendation-type <recommendation-type>`, default is `latest` ("latest", "stable", "performance", "security").
 
 By default, Thoth will discover the runtime environment you are running on. If you want to receive a recommendation for a specific runtime environment, you can use the following flags:
@@ -208,6 +204,8 @@ By default, Thoth will discover the runtime environment you are running on. If y
 - `--os-name`
 - `--os-version`
 - `--python-version`
+
+You can also use `%horus lock --pipenv` if you want to lock dependencies with Pipenv resolution engine.
 
 7. Run cell with `%horus check` to check the status of your notebook or `%horus show` to show the content of your notebook.
 
