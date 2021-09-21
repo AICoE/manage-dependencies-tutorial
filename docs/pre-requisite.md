@@ -9,6 +9,11 @@
 | JupyterLab environment with [jupyterlab-requirements][11] library and [Elyra][5] |  Using [Operate First][1], you can login in [JupyterHub][4] with your GitHub Account and you can spawn the image called [Experimental Elyra Notebook Image](https://github.com/operate-first/apps/blob/master/kfdefs/base/jupyterhub/notebook-images/experimental-elyra-notebook-imagestream.yaml), which has the library for dependency management already installed. If you use [Meteor][12], it will build a [JupyterHub][4] environment for your project from the GitHub repository URL you provide to it. (e.g. this [URL](https://github.com/pacospace/manage-dependencies-tutorial/)). |
 
 
+## Next Step
+
+[Setup your initial environment](./setup-initial-environment.md)
+
+
 ## References
 
 * [Red Hat Openshift][1]
