@@ -33,9 +33,9 @@ At the end of this tutorial you will be able to manage dependencies for your pro
 
 ## Where you will run this tutorial?
 
-[Operate First][1] is an open infrastructure environment started at Red Hat's Office of the CTO. It has been selected to run this tutorial since it is an open source initiative that fulfills all the requirements stated above. Anyone with a Google account can log in and start developing. To learn more about Operate First, visit the [website](https://www.operate-first.cloud/) or [GitHub community](https://github.com/operate-first).
+[Operate First][8] is an open infrastructure environment started at Red Hat's Office of the CTO. It has been selected to run this tutorial since it is an open source initiative that fulfills all the requirements stated above. Anyone with a Google account can log in and start developing. To learn more about Operate First, visit the [website](https://www.operate-first.cloud/) or [GitHub community](https://github.com/operate-first).
 
-[Operate First][1] hosts [Open Data Hub][3] with all the tools provided for Data Science projects (e.g. JupyterHub, Elyra, Kubeflow Pipelines, Seldon, Prometheus, Grafana, Superset) running on [Red Hat Openshift][4].
+[Operate First][8] hosts [Open Data Hub][3] with all the tools provided for Data Science projects (e.g. JupyterHub, Elyra, Kubeflow Pipelines, Seldon, Prometheus, Grafana, Superset) running on [Red Hat Openshift][4].
 
 
 ## Why does the tutorial repository have this structure?
@@ -69,6 +69,7 @@ The project template used can be found here: [project template][7]. It shows cor
 * [Kebechet Bot][5]
 * [AICoE CI][6]
 * [project template][7]
+* [Operate First][8]
 
 [1]: https://thoth-station.ninja/
 [2]: https://github.com/thoth-station/jupyterlab-requirements
@@ -77,3 +78,4 @@ The project template used can be found here: [project template][7]. It shows cor
 [5]: https://github.com/marketplace/khebhut
 [6]: https://github.com/AICoE/aicoe-ci
 [7]: https://github.com/aicoe-aiops/project-template
+[8]: https://www.operate-first.cloud/
