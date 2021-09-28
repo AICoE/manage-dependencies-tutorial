@@ -132,10 +132,6 @@ NOTE: _If you want to edit some dependencies, you can simply add them again with
 
 4. Run cell with `%horus check` to check the status of your notebook.
 
-<div style="text-align:center">
-<img alt="Horus check after discover" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabHorusCheckAfterDiscover.png">
-</div>
-
 5. Run `%horus lock` to lock dependencies using Thoth resolution engine.
 
 If you are interested in a specific recommendation from Thoth, add `--recommendation-type <recommendation-type>`, default is `latest` ("latest", "stable", "performance", "security").
