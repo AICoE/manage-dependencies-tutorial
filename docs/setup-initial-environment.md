@@ -12,7 +12,7 @@ To begin, you'll need to fork this repository to create your own copy. If you're
 
 In order to access the [JupyterHub][4] from [Open Data Hub][3] deployed on the [Operate First][2] cluster:
 
-1. Click this [link](https://jupyterhub-opf-jupyterhub.apps.zero.massopen.cloud/) to visit the Operate First JupyterHub.
+1. Click this [link](https://jupyterhub-opf-jupyterhub.apps.smaug.na.operate-first.cloud/) to visit the Operate First JupyterHub.
 
     <div style="text-align:center">
     <img alt="Jupyter Hub UI" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterHubNewUI.png">
