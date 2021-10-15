@@ -174,7 +174,7 @@ Once you modify the `.aicoe-ci.yaml` push the changes to your repo. Check [push 
 
 ## Create new release
 
-Now that everything is set you can create new images. Some of the pipelines used in the Thoth project are maintained by bots. Therefore you can simply open an issue asking for a release (e.g patch, minor, major) and the bots will handle your request. Once the request is completed, the bot will also automatically close the issue, as you can see from the images below:
+Now that everything is set you can create new images. Some of the pipelines used in the Thoth project are maintained by bots. Therefore you can simply open an issue asking for a release from the repo you maintain (e.g patch, minor, major) and the bots will handle your request. Once the request is completed, the bot will also automatically close the issue, as you can see from the images below:
 
 <div style="text-align:center">
 <img alt="Open Issue Release" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/KhebutOpenIssueRelease.png">
