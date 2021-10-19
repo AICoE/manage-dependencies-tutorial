@@ -19,7 +19,9 @@ managers:
   - name: version
     configuration:
       maintainers:
-        - tumido
+        - pacospace
+        - goern
+        - hnalla
       assignees:
         - sesheta
       labels: [bot]
