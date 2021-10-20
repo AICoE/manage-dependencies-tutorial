@@ -4,7 +4,7 @@ At this step of the tutorial you learned how to work on your project safely, sup
 
 # Project Meteor
 
-[Project Meteor][1] is a combined effort across the AICoE team at Red Hat, to provide a single tool for data scientists and other users where they can interact with, explore and leverage all of our services, tools and technologies for developing intelligent applications. Project Meteor is deployed on [Operate First][2] and you can use it following this [link](http://meteor-shower-aicoe-meteor.apps.zero.massopen.cloud/)
+[Project Meteor][1] is a combined effort across the AICoE team at Red Hat, to provide a single tool for data scientists and other users where they can interact with, explore and leverage all of our services, tools and technologies for developing intelligent applications. Project Meteor is deployed on [Operate First][2] and you can use it following this [link][3]
 
 
 1. Enter the URL to your Git repository in [Project Meteor][1].
@@ -29,3 +29,4 @@ Now you are all set and ready to show your project to others.
 
 [1]: https://github.com/AICoE/meteor
 [2]: https://www.operate-first.cloud/
+[3]: https://shower.meteor.zone
