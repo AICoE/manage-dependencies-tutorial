@@ -1,0 +1,24 @@
+format: jb-book
+root: README
+parts:
+  - caption: Behind the Scenes
+    chapters:
+    - file: docs/source/pre-requisite
+    - file: docs/source/setup-initial-environment
+  - caption: Manage dependencies in Notebooks
+    chapters:
+    - file: docs/source/manage-dependencies-notebook
+      sections:
+        - file: docs/source/start-new-notebook
+        - file: docs/source/add-missing-dependencies-notebook
+        - file: notebooks/discover-my-notebook
+        - file: docs/source/convert-notebook
+        - file: notebooks/make-notebook-reproducible
+        - file: docs/source/run-reproducible-notebook
+        - file: docs/source/clean-kernel
+  - caption: Contribute and save changes
+    chapters:
+    - file: docs/source/push-changes
+  - caption: Automate dependencies updated and releases
+    chapters:
+    - file: docs/source/thoth-aicoe-services
