@@ -37,9 +37,10 @@ Sesheta, the bot that will assist you in this tutorial, communicates through iss
 
 ### 3. Edit `.thoth.yaml`
 
-Thoth services require a configuration file ([.thoth.yaml](../.thoth.yaml)) at the root level of the project. This tutorial is based on [project-template][8], therefore the .thoth.yaml is already present.
+Thoth services require a configuration file [.thoth.yaml](https://github.com/AICoE/manage-dependencies-tutorial/blob/master/.thoth.yaml) at the root level of the project. This tutorial is based on [project-template][8], therefore the .thoth.yaml is already present.
 
-In this tutorial, the file is already present, so you will not need to add it. To configure this on your own fork, you will need to update the Kebechet [managers](https://github.com/thoth-station/kebechet/tree/master/kebechet/managers) section to include your GitHub username and push changes to your fork. Check [push changes section]((./push-changes.md)) for more details.
+In this tutorial, the file is already present, so you will not need to add it. To configure this on your own fork, you will need to update the Kebechet [managers](https://github.com/thoth-station/kebechet/tree/master/kebechet/managers) section to include your GitHub username and push changes to your fork. 
+Check [push changes section](./push-changes.md) for more details.
 
 An example snippet of `.thoth.yaml` highlightling the changes to be made is shown below.
 
@@ -76,12 +77,12 @@ To learn more about Thoth bots and services, please check out the guide [here][2
 
 ### 4. Push changes to GitHub
 
-Once you modify the `.thoth.yaml` push the changes to your repo. Check [push changes section]((./push-changes.md)) for more details.
+Once you modify the `.thoth.yaml` push the changes to your repo. Check [push changes section](./push-changes.md) for more details.
 
 
 ## Set up AICoE CI
 
-The [AICoE CI][1](https://github.com/AICoE/aicoe-ci) can be set up in just a few steps.
+The [AICoE CI][1] can be set up in just a few steps.
 
 ### 1. Install AICOE CI
 
@@ -149,7 +150,7 @@ Now everything is set on your container registry and the AICoE-CI will be able t
 
 ### 6. Edit `.aicoe-ci.yaml`
 
-The last step is to edit the [aicoe-ci configuration file](https://github.com/AICoE/aicoe-ci#aicoe-ci-configuration-file). This tutorial is based on [project-template][8], therefore the .thoth.yaml is already present. The `.aicoe-ci.yaml` configuration file allows user to assign details about the build requirements and specify base image and registry details for build and push. For the purpose of this tutorial, the [.aicoe-ci.yaml](../.aicoe-ci.yaml) file is already present. However, you may need to edit some of the fields for your personal access, namely `registry-org`, `registry-project`, and `registry-secret`.
+The last step is to edit the [aicoe-ci configuration file](https://github.com/AICoE/aicoe-ci#aicoe-ci-configuration-file). This tutorial is based on [project-template][8], therefore the .thoth.yaml is already present. The `.aicoe-ci.yaml` configuration file allows user to assign details about the build requirements and specify base image and registry details for build and push. For the purpose of this tutorial, the [.aicoe-ci.yaml](https://github.com/AICoE/manage-dependencies-tutorial/blob/master/.aicoe-ci.yaml) file is already present. However, you may need to edit some of the fields for your personal access, namely `registry-org`, `registry-project`, and `registry-secret`.
 
 ```yaml
 check:
@@ -169,7 +170,7 @@ For more detailed information on the config file and robot accounts, visit the [
 
 ### 7. Push changes to GitHub
 
-Once you modify the `.aicoe-ci.yaml` push the changes to your repo. Check [push changes section]((./push-changes.md)) for more details.
+Once you modify the `.aicoe-ci.yaml` push the changes to your repo. Check [push changes section](./push-changes.md) for more details.
 
 
 ## Create new release
@@ -186,7 +187,7 @@ Now that everything is set you can create new images. Some of the pipelines used
 
 Fun fact, the `CHANGELOG` in the release is also created using an AI model that clusters pull requests. You can find more information about this model in our [glyph][3] project.
 
-Once the issue is closed by the bot, a new tag is created in the GitHub repo. This in turn triggers the Tekton pipelines in AICoE CI to start the build process and push the image on the registry according to the configuration defined in the [.aicoe-ci.yaml](../.aicoe-ci.yaml).
+Once the issue is closed by the bot, a new tag is created in the GitHub repo. This in turn triggers the Tekton pipelines in AICoE CI to start the build process and push the image on the registry according to the configuration defined in the [aicoe-ci.yaml](https://github.com/AICoE/manage-dependencies-tutorial/blob/master/.aicoe-ci.yaml).
 
 Once the image has been created by the Tekton pipelines, you can find it in your registry (e.g. Quay):
 
@@ -207,9 +208,7 @@ An example of the Khebut bot in action can be seen below.
 </div>
 
 
-## Next Step
-
-[Share your work](./share-your-work.md)
+Congratulations!! You successfully concluded this tutorial.
 
 
 ## References
