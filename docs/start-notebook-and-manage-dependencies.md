@@ -221,7 +221,7 @@ NOTE: _In order to set up your reproducible notebook environment, you have to ve
 
 To verify that the notebook is set to the new kernel, run ```%horus set-kernel``` to make sure you have a kernel with your dependencies installed. You can also assign a new name to your kernel using ```--kernel-name```.
 
-You can see what is the current kernel for you rnotebook using the top right button : 
+You can see what is the current kernel for you rnotebook using the top right button :
 
 <div style="text-align:center">
 <img alt="Current kernel button" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabSelectKernelButton.png">
@@ -230,7 +230,6 @@ You can see what is the current kernel for you rnotebook using the top right but
 <div style="text-align:center">
 <img alt="Select kernel button" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabSelectKernel.png">
 </div>
-
 
 ## Next Step
 
