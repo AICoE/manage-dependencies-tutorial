@@ -1,5 +1,5 @@
 
-# Bring your notebook and make it reproducible (no dependencies)
+# Bring your notebook and make it reproducible (Discover dependencies required automatically)
 
 Let's say I have a notebook I was working on and I want to make it reproducible because I did not state any dependencies.
 

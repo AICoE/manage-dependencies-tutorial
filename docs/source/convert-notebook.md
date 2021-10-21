@@ -1,4 +1,4 @@
-# Bring your notebook and make it reproducible (pip install cells)
+# Bring your notebook and make it reproducible (Convert cells with pip commands automatically)
 
 Let's say I have a notebook I was working on that uses `pip` in my cells and I want to make it reproducible.
 

@@ -39,7 +39,7 @@ Sesheta, the bot that will assist you in this tutorial, communicates through iss
 
 Thoth services require a configuration file [.thoth.yaml](https://github.com/AICoE/manage-dependencies-tutorial/blob/master/.thoth.yaml) at the root level of the project. This tutorial is based on [project-template][8], therefore the .thoth.yaml is already present.
 
-In this tutorial, the file is already present, so you will not need to add it. To configure this on your own fork, you will need to update the Kebechet [managers](https://github.com/thoth-station/kebechet/tree/master/kebechet/managers) section to include your GitHub username and push changes to your fork. 
+In this tutorial, the file is already present, so you will not need to add it. To configure this on your own fork, you will need to update the Kebechet [managers](https://github.com/thoth-station/kebechet/tree/master/kebechet/managers) section to include your GitHub username and push changes to your fork.
 Check [push changes section](./push-changes.md) for more details.
 
 An example snippet of `.thoth.yaml` highlightling the changes to be made is shown below.
