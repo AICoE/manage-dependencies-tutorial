@@ -211,6 +211,26 @@ If you want to show a specific part of your dependencies information stored in t
 - `--pipfile-lock`
 - `--thoth-config` (only if Thoth resolution engine was used)
 
+### Reproducible Notebooks
+
+This section is intended for users who would like to manage already reproducible notebooks.
+
+NOTE: _In order to set up your reproducible notebook environment, you have to verify that your [JupyterLab](https://github.com/thoth-station/jupyterlab-requirements#requirements) and your [jupyterlab-requirements](https://github.com/thoth-station/jupyterlab-requirements/blob/master/requirements.txt) versions are both up to date._
+
+#### Create a new kernel with %horus
+
+To verify that the notebook is set to the new kernel, run ```%horus set-kernel``` to make sure you have a kernel with your dependencies installed. You can also assign a new name to your kernel using ```--kernel-name```.
+
+You can see what is the current kernel for you rnotebook using the top right button : 
+
+<div style="text-align:center">
+<img alt="Current kernel button" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabSelectKernelButton.png">
+</div>
+
+<div style="text-align:center">
+<img alt="Select kernel button" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/JupyterLabSelectKernel.png">
+</div>
+
 
 ## Next Step
 
