@@ -45,19 +45,17 @@ The project template used can be found here: [project template][7]. It shows cor
 
 ## Tutorial pre-requisites
 
-0. [Pre-requisites](./docs/pre-requisite.md)
+0. [Pre-requisites](./docs/source/pre-requisite.md)
 
 ## Tutorial Steps
 
-1. [Setup your initial environment](./docs/setup-initial-environment.md)
+1. [Setup your initial environment](./docs/source/setup-initial-environment.md)
 
-2. [Manage dependencies for your notebook](./docs/start-notebook-and-manage-dependencies.md)
+2. [Manage dependencies for your notebook](./docs/source/manage-dependencies-notebook.md)
 
-3. [Push changes to GitHub](./docs/push-changes.md)
+3. [Push changes to GitHub](./docs/source/push-changes.md)
 
-4. [Setup bots and pipelines to create releases, build images and enable automatic dependency management](./docs/thoth-aicoe-services.md)
-
-5. [Share your work](./docs/share-your-work.md)
+4. [Setup bots and pipelines to create releases, build images and enable automatic dependency management](./docs/source/thoth-aicoe-services.md)
 
 
 ## References
