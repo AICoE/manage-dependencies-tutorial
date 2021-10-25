@@ -22,7 +22,7 @@ To begin, you'll need to fork this repository to create your own copy. If you're
 [Project Meteor][5] is a combined effort across the AICoE team at Red Hat, to provide a single tool for data scientists and other users where they can interact with, explore and leverage all of our services, tools and technologies for developing intelligent applications. [Project Meteor][5] is deployed on [Operate First][2] and you can use it following this [link](https://shower.meteor.zone/)
 
 
-1. Enter the URL to your Git repository in [Project Meteor](https://shower.meteor.zone/.
+1. Enter the URL to your Git repository in [Meteor](https://shower.meteor.zone/).
 
 <div style="text-align:center">
 <img alt="Enter URL Project Meteor" src="https://raw.githubusercontent.com/AICoE/manage-dependencies-tutorial/master/docs/images/ProjectMeteorEnterURL.png">
